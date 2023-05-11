@@ -1,0 +1,8 @@
+<ng-container *ngFor="let entry of formArray.controls; let i = index">
+  <input type="text" />
+  <button (click)="removeItem(i)">Remove {{ displayName }}</button>
+  <br />
+</ng-container>
+<br />
+<button (click)="addNewItem()">Add {{ displayName }}</button>
+<br />
